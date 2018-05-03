@@ -9,7 +9,7 @@ class App extends Component {
   componentDidMount() {
     fetch('/api/todos')
       .then(res => res.json())
-      .then(users => this.setState({ users }));
+      .then(todos => this.setState({ todos }));
   }
   
   render() {
@@ -23,9 +23,11 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <h1>Todo</h1>
+        <div key={'id1'}>{'placeholder'}</div>
         {this.state.todos.map(todo =>
-          <div key={todo.title}>{todo.todolist}</div>
+          <div key={todo.title}>{todo.todoItems.map(td => td.content + ': '+ td.complete)}</div>
         )}
+
       </div>
     );
   }

@@ -16,5 +16,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "proxy": "https://express-postgre-tutorial-manutheking.c9users.io:8081/"
+  "proxy": "http://localhost:3001/"
 }
