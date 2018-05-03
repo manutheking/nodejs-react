@@ -27,6 +27,6 @@ How to use:
  - npm install
  - npm run start:dev 
  - cd todolist && npm install
- - npm run
+ - npm run start
 
  backend will run on http:XXX:3001 and client on http:XXX:3000
